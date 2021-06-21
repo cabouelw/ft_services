@@ -2,7 +2,6 @@ FROM alpine:3.12.3
 
 RUN echo "http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 RUN apk update && apk add openssl nginx openrc telegraf
-
 RUN mkdir /etc/telegraf
 ADD ./srcs/telegraf.conf /etc/telegraf/telegraf.conf
 

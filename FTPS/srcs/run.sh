@@ -1,7 +1,4 @@
-echo "Strating Telegraf ... "
 telegraf &
-
-echo "service vsftpd start ... "
 rc-service vsftpd start
 
 sleep 2
@@ -12,15 +9,11 @@ do
     then
 		  echo "vsftpd is not running !"
 		  exit 1
-	  else
-		  echo "vsftpd is running !"
     fi
     if ! pgrep telegraf 1>/dev/null;
     then
 		  echo "telegraf is not running !"
 		  exit 1
-	  else
-		  echo "telegraf is running !"
     fi
     sleep 2
 done

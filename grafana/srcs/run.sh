@@ -1,6 +1,4 @@
-echo "Strating Telegraf ... "
 telegraf &>/dev/null &
-echo "Starting the grafana-server binary ..."
 ( ./grafana/bin/grafana-server -homepath ./grafana 1>/dev/null) &
 
 sleep 3

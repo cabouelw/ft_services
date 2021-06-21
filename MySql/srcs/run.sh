@@ -1,4 +1,4 @@
-rc-service telegraf start
+telegraf &
 
 if [ ! -d "/var/lib/mysql/wordpress/" ]; then
 	/etc/init.d/mariadb setup

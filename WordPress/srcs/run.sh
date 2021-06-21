@@ -1,10 +1,5 @@
-echo "Strating Telegraf ... "
 telegraf &
-
-echo "service nginx start ... "
 rc-service nginx start
-
-echo "service php-fpm7 start ... "
 rc-service php-fpm7 start
 
 sleep 2
