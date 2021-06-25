@@ -1,10 +1,4 @@
 
-addgroup -g 433 -S 1337
-adduser -u 431 -D -G 1337 -h /home/1337 -s /bin/false 1337
-
-echo "1337:1337" | chpasswd
-chown 1337:1337 /home/1337/ -R
-
 telegraf &
 rc-service vsftpd start
 
