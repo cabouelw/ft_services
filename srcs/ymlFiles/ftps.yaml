@@ -20,7 +20,6 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 21
-        - containerPort: 30020
         - containerPort: 30021
 ---
 apiVersion: v1
